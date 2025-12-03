@@ -1,7 +1,9 @@
 class MySet:
 
-    def __init__(self, enumerable=[]):
+    def __init__(self, enumerable=None):
         self.dictionary = {}
+        if enumerable is None:
+            enumerable = []
         for value in enumerable:
             self.dictionary[value] = True
 
