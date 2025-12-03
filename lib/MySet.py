@@ -7,3 +7,7 @@ class MySet:
 
     def has(self, value):
         return value in self.dictionary
+
+    def add(self, value):
+        self.dictionary[value] = True
+        return self
