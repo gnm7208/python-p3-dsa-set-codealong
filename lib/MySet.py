@@ -24,3 +24,7 @@ class MySet:
         for key in self.dictionary.keys():
             set_list.append(str(key))
         return f'MySet: {{",".join(set_list)}}'
+
+    def clear(self):
+        self.dictionary.clear()
+        return self
