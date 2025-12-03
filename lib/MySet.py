@@ -1,6 +1,8 @@
 class MySet:
+    """A custom Set implementation using a dictionary as backing store."""
 
     def __init__(self, enumerable=None):
+        """Initialize MySet with optional enumerable of values."""
         self.dictionary = {}
         if enumerable is None:
             enumerable = []
