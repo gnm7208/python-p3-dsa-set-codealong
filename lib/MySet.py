@@ -11,3 +11,7 @@ class MySet:
     def add(self, value):
         self.dictionary[value] = True
         return self
+
+    def delete(self, value):
+        self.dictionary.pop(value, None)
+        return self
