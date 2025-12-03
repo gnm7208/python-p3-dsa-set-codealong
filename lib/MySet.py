@@ -15,3 +15,6 @@ class MySet:
     def delete(self, value):
         self.dictionary.pop(value, None)
         return self
+
+    def size(self):
+        return len(self.dictionary)
