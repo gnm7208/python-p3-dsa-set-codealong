@@ -24,10 +24,8 @@ class MySet:
         return len(self.dictionary)
 
     def __str__(self):
-        set_list = []
-        for key in self.dictionary.keys():
-            set_list.append(str(key))
-        return f'MySet: {{",".join(set_list)}}'
+        set_list = [str(key) for key in self.dictionary.keys()]
+        return f'MySet: {{", ".join(set_list)}}'
 
     def clear(self):
         self.dictionary.clear()
