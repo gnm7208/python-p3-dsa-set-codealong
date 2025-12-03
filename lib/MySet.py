@@ -18,3 +18,9 @@ class MySet:
 
     def size(self):
         return len(self.dictionary)
+
+    def __str__(self):
+        set_list = []
+        for key in self.dictionary.keys():
+            set_list.append(str(key))
+        return f'MySet: {{",".join(set_list)}}'
